@@ -26,7 +26,7 @@ body {
   box-sizing: border-box;
 }
 
-header {
+nav {
   height: 80px;
   padding: 0 50px;
   display: flex;
@@ -206,7 +206,7 @@ header {
     padding: 0;
   }
 
-  header {
+  nav {
     padding: 0;
     height: 115px;
     width: 100%;
