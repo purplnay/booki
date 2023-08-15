@@ -12,14 +12,18 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif !important;
-  font-size: var(--regular) !important;
 }
 
 body {
   background: #ffffff;
   max-width: 1440px;
   margin: 0 auto;
+  font-size: 16px;
 }
+
+/*
+ * NAVIGATION
+ */
 
 .navigation {
   display: flex;
@@ -66,11 +70,33 @@ body {
   color: var(--primary);
 }
 
+/*
+ * HEADER
+ */
+
+.header {
+  padding: 20px;
+}
+
+.header > *:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+
+.title {
+  font-size: var(--large);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 @media (min-width: 768px) {
   body {
     padding: 0 50px;
+  }
+
+  body > *:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .navigation {
@@ -80,7 +106,7 @@ body {
   }
 
   .brand {
-    width: 162px;
+    width: auto;
   }
 
   .menu {
@@ -99,6 +125,10 @@ body {
 
   .menu-item.active {
     border-top-color: var(--primary);
+  }
+
+  .header {
+    padding: 0;
   }
 }
 
