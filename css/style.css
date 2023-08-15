@@ -61,6 +61,7 @@ header {
 
 .menu-item a {
   text-decoration: none;
+  color: #000000;
 }
 
 .menu-item.active {
