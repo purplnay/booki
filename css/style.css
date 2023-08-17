@@ -10,7 +10,7 @@
 }
 
 /****** General ***********/
-* {
+*:not(i) {
   font-family: "Raleway", sans-serif !important;
 }
 
@@ -79,13 +79,55 @@ body {
 }
 
 .header > *:not(:last-child) {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.4em;
 }
 
 .title {
   font-size: var(--large);
   font-weight: 700;
   margin-bottom: 0.5em;
+}
+
+.search {
+  max-width: 380px;
+  border-radius: 15px;
+  border: 2px solid var(--soft-grey);
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.search-pin {
+  background-color: var(--soft-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  font-size: 1.2em;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1em;
+  outline: none;
+}
+
+.search-button {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 1.2em;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-button span {
+  display: none;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -129,6 +171,23 @@ body {
 
   .header {
     padding: 0;
+  }
+
+  .search-button {
+    width: auto;
+    padding: 0 0.8em;
+    box-shadow: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .search-button span {
+    display: inline;
+    font-weight: 700;
   }
 }
 
