@@ -114,6 +114,7 @@ nav {
 
 .search-location-icon {
   color: #000000;
+  padding: 1em;
 }
 
 .search-input {
@@ -180,6 +181,9 @@ nav {
   border: 2px solid #d9d9d9;
   cursor: pointer;
   background-color: #ffffff;
+  display: flex;
+  gap: 0 1em;
+  font-weight: bold;
 }
 
 .filters-button.active,
@@ -253,11 +257,8 @@ nav {
 
 .hebergements-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.hebergements-cards .card {
-  grid-column: 1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .hebergements-cards .card img {
