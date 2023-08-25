@@ -345,6 +345,41 @@ nav {
   margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activites {
+  padding: 1em;
+  margin: 2rem 0;
+}
+
+.activites-list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.activites-list .card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.activites-list .card figure {
+  margin: 0;
+}
+
+.activites-image {
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.activites-caption {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em 1.5em;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
