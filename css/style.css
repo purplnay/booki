@@ -473,6 +473,7 @@ nav {
   }
 
   .menu-item {
+    border-top: none;
     flex: 1;
     padding-top: 0;
     padding-bottom: 1em;
@@ -480,8 +481,7 @@ nav {
     text-align: center;
   }
 
-  .menu-item.active {
-    border-top: none;
+  .menu-item:hover {
     border-bottom-color: var(--main-color);
   }
 
