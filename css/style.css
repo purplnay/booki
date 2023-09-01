@@ -562,4 +562,9 @@ nav {
   .activites-image {
     height: 140px;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
