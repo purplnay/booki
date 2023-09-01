@@ -186,7 +186,6 @@ nav {
   font-weight: bold;
 }
 
-.filters-button.active,
 .filters-button:hover {
   background-color: var(--filter-bg-color);
 }
