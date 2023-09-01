@@ -522,4 +522,35 @@ nav {
   .filters-button {
     width: 100%;
   }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  #hebergements-and-populaires {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .populaires-cards {
+    flex-direction: column;
+  }
+
+  .populaires-cards .card,
+  .hebergements .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hebergements {
+    background-color: #ffffff !important;
+  }
+
+  .hebergements-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
