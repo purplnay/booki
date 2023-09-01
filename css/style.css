@@ -485,9 +485,21 @@ nav {
     border-bottom-color: var(--main-color);
   }
 
+  .search {
+    width: 100%;
+    max-width: none;
+  }
+
   .search-icon {
     display: inline;
     color: #ffffff;
+  }
+
+  .search-button {
+    aspect-ratio: 1/1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
   .search-text {
