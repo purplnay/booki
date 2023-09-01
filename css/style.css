@@ -224,6 +224,10 @@ nav {
   object-fit: cover;
 }
 
+.card img.align-top {
+  object-position: top;
+}
+
 .card-title {
   font-size: 16px;
 }
